@@ -31,6 +31,7 @@ jobs:
         VERSION=${{ steps.version.outputs.version }}
         IMAGE_TAG_VERSION=kohlarnhin/mx-core:${VERSION}
         IMAGE_TAG_LATEST=kohlarnhin/mx-core:latest
-        docker buildx build --platform linux/amd64,linux/arm64 --file Dockerfile --tag $IMAGE_TAG_VERSION --tag $IMAGE_TAG_LATEST --push .
+#        docker buildx build --platform linux/amd64,linux/arm64 --file Dockerfile --tag $IMAGE_TAG_VERSION --tag $IMAGE_TAG_LATEST --push .
+        docker buildx build --platform linux/arm64 --file Dockerfile --tag $IMAGE_TAG_VERSION --tag $IMAGE_TAG_LATEST --push .
 
   
