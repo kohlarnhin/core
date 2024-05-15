@@ -108,7 +108,7 @@ get_mongodb_configuration() {
     CONNECTION_STRING=$(get_cmd_value "--db_connection_string=" $CMD)
   else
     if [ "$(is_in_cmd_with_value "--db_user=" $CMD)" = "true" ]; then
-      CONNECTION_STRING+="$(get_cmd_value "--db_user=" $CMD):************@"
+      CONNECTION_STRING+="$(get_cmd_value "--db_user=" $CMD):@"
     fi
     CONNECTION_STRING+="$(get_cmd_value "--db_host=" $CMD):$(get_cmd_value "--db_port=" $CMD)/$(get_cmd_value "--collection_name=" $CMD)"
     if [ "$(is_in_cmd_with_value "--db_options=" $CMD)" = "true" ]; then
@@ -204,5 +204,6 @@ echo "Cluster: $(get_boolean_str $(is_in_cmd "--cluster" $command_args))"
 echo "============================================"
 
 command="node index.js $command_args"
-
+echo $command
+echo "============================================"
 exec $command
