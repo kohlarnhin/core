@@ -126,22 +126,22 @@ get_mongodb_configuration() {
 declare -A valueMap=(
   [PORT]="value,--port=,2333"
   [DEMO]="switch,--demo,false"
-  [ALLOWED_ORIGINS]="value,--allowed_origins=,localhost"
+  [ALLOWED_ORIGINS]="value,--allowed_origins=,${ALLOWED_ORIGINS}"
   [CONFIG_PATH]="value,--config_path=,@@NULL@@"
 
   # DB
   [DB_COLLECTION_NAME]="value,--collection_name=,mx-space"
-  [DB_HOST]="value,--db_host=,127.0.0.1"
+  [DB_HOST]="value,--db_host=,${MONGODB_HOST}"
   [DB_PORT]="value,--db_port=,27017"
-  [DB_USER]="value,--db_user=,@@NULL@@"
+  [DB_USER]="value,--db_user=,admin"
   [DB_PASSWORD]="value,--db_password=,@@NULL@@"
   [DB_OPTIONS]="value,--db_options=,@@NULL@@"
   [DB_CONNECTION_STRING]="value,--db_connection_string=,@@NULL@@"
 
   # Redis
-  [REDIS_HOST]="value,--redis_host=,127.0.0.1"
+  [REDIS_HOST]="value,--redis_host=,${REDIS_HOST}"
   [REDIS_PORT]="value,--redis_port=,6379"
-  [REDIS_PASSWORD]="value,--redis_password=,@@NULL@@"
+  [REDIS_PASSWORD]="value,--redis_password=,${REDIS_PASSWORD}"
   [DISABLE_CACHE]="switch,--disable_cache,false"
  
   # JWT
