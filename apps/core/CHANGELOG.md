@@ -1,5 +1,180 @@
 # CHANGELOG
 
+# [6.0.0](https://github.com/mx-space/core/compare/v5.8.4...v6.0.0) (2024-06-22)
+
+
+### Bug Fixes
+
+* cleanTempDirectory not remake trash directory ([#1824](https://github.com/mx-space/core/issues/1824)) ([4877459](https://github.com/mx-space/core/commit/4877459edbdeba975ddd57874856f8a869001d28))
+* crypto compatible ([503f079](https://github.com/mx-space/core/commit/503f0798e6a6ba44b11d0826b2886565c7944c19))
+* **deps:** update dependency @clerk/clerk-sdk-node to v5.0.12 ([772f6f7](https://github.com/mx-space/core/commit/772f6f79653272ba19608cc765c48c27c8b4209b))
+* **deps:** update dependency @nestjs/throttler to v5.2.0 ([#1806](https://github.com/mx-space/core/issues/1806)) ([bfa25c0](https://github.com/mx-space/core/commit/bfa25c0d06e084a413990d4400e1b8e6121ded32))
+* **deps:** update dependency axios-retry to v4.4.1 ([#1825](https://github.com/mx-space/core/issues/1825)) ([0585033](https://github.com/mx-space/core/commit/05850331effd5d5e0341db8c507bed3c269cf7f8))
+* **deps:** update dependency mongoose to v8.4.3 ([79c7585](https://github.com/mx-space/core/commit/79c7585ba7b5c156af0ba94024572f68e18d7a6e))
+* **deps:** update dependency nodemailer to v6.9.14 ([416f933](https://github.com/mx-space/core/commit/416f9331621ac92169acd11459f35cb975306225))
+
+
+
+## [5.8.4](https://github.com/mx-space/core/compare/v5.8.3...v5.8.4) (2024-06-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @clerk/clerk-sdk-node to v5.0.11 ([b88b7bf](https://github.com/mx-space/core/commit/b88b7bf8a1df9081e3a1db0e042a424c7e917753))
+* **deps:** update dependency openai to v4.51.0 ([#1791](https://github.com/mx-space/core/issues/1791)) ([78c03e3](https://github.com/mx-space/core/commit/78c03e3a76c0419c79c4da0bd81be84cfc052f2e))
+
+
+### Features
+
+* support `gh_token` closes 1758 ([39e10ef](https://github.com/mx-space/core/commit/39e10efcd1113e475b03cb055321a1b58f9306b3))
+
+
+
+## [5.8.3](https://github.com/mx-space/core/compare/v5.8.2...v5.8.3) (2024-06-12)
+
+
+### Bug Fixes
+
+* **deps:** update babel monorepo to v7.24.7 ([37e1a83](https://github.com/mx-space/core/commit/37e1a83d98c50f0dbe7d66f415097e2458a8f857))
+* **deps:** update dependency @clerk/clerk-sdk-node to v5.0.10 ([f2eb9c9](https://github.com/mx-space/core/commit/f2eb9c93f453dddb7f0c4371e80edfccf27b88f4))
+* **deps:** update dependency @fastify/multipart to v8.3.0 ([#1786](https://github.com/mx-space/core/issues/1786)) ([0c40479](https://github.com/mx-space/core/commit/0c40479502e89085ad67dbf720aef2c5f016452a))
+* **deps:** update dependency @langchain/openai to v0.1.2 ([#1754](https://github.com/mx-space/core/issues/1754)) ([e0a6fcf](https://github.com/mx-space/core/commit/e0a6fcf309b6183f3a1c72e718ad805e53641569))
+* **deps:** update dependency @langchain/openai to v0.1.3 ([ca985b9](https://github.com/mx-space/core/commit/ca985b9cf2bb1886885f68957bb3ec91a1cf96b6))
+* **deps:** update dependency axios-retry to v4.4.0 ([#1772](https://github.com/mx-space/core/issues/1772)) ([66bbe14](https://github.com/mx-space/core/commit/66bbe14da48eee6dd7ac8b6a0f7e21618639a85f))
+* **deps:** update dependency cache-manager to v5.6.1 ([#1784](https://github.com/mx-space/core/issues/1784)) ([c90dafa](https://github.com/mx-space/core/commit/c90dafae12d1cc452947cabdf538c789326cd9b2))
+* **deps:** update dependency cache-manager-ioredis-yet to v2.1.1 ([#1785](https://github.com/mx-space/core/issues/1785)) ([462a6a8](https://github.com/mx-space/core/commit/462a6a87fcbd63e44cb0d5b57bac7723be59a266))
+* **deps:** update dependency isbot to v5.1.9 ([514bb52](https://github.com/mx-space/core/commit/514bb52f352d32b4b133cee98679b59f691bee1a))
+* **deps:** update dependency langchain to v0.2.5 ([2930d0c](https://github.com/mx-space/core/commit/2930d0c812a4df67d05c6df9655b376c85d33398))
+* **deps:** update dependency linkedom to v0.18.3 ([098d726](https://github.com/mx-space/core/commit/098d72640e52dc7a79187294581a5e0bc95d8a8d))
+* **deps:** update dependency openai to v4.49.0 ([#1774](https://github.com/mx-space/core/issues/1774)) ([89b034b](https://github.com/mx-space/core/commit/89b034b8d2091fd49e89896ddaf091d2ff1f2c5e))
+* **deps:** update dependency openai to v4.49.1 ([e8f66d2](https://github.com/mx-space/core/commit/e8f66d28f2a618d0ffa6e483300e17942a620c62))
+* master avatar in recent activity comments cannot be displayed ([#1794](https://github.com/mx-space/core/issues/1794)) ([1750340](https://github.com/mx-space/core/commit/175034031f00591631ffae0edcabedddeddfea2d))
+
+
+
+## [5.8.2](https://github.com/mx-space/core/compare/v5.8.1...v5.8.2) (2024-06-04)
+
+
+### Bug Fixes
+
+* delete file with EXDEV issue ([#1770](https://github.com/mx-space/core/issues/1770)) ([b3dfbdf](https://github.com/mx-space/core/commit/b3dfbdf99628ae685855ecf20cf1782ddc8d9b25))
+* **deps:** update nest monorepo to v10.3.9 ([#1768](https://github.com/mx-space/core/issues/1768)) ([d627d38](https://github.com/mx-space/core/commit/d627d38b69cb4d88d3497c05c50602c4b8f9dfa2))
+
+
+
+## [5.8.1](https://github.com/mx-space/core/compare/v5.8.0...v5.8.1) (2024-06-02)
+
+
+### Bug Fixes
+
+* ai summary language detect ([8764815](https://github.com/mx-space/core/commit/876481529b2badf0adeb192c6c69b5a3216ea072))
+* check slug length ([6a58262](https://github.com/mx-space/core/commit/6a5826248caff1458e7cb09b933d28d5f798fc55))
+* **deps:** update dependency inquirer to v9.2.23 ([eae2f50](https://github.com/mx-space/core/commit/eae2f5000705a0cf16ad50b70b7bc88ef9173f7e))
+* **deps:** update dependency langchain to v0.2.4 ([08f30b5](https://github.com/mx-space/core/commit/08f30b53ac4e7807c43c3ba2f2ef668dd8119ae9))
+* **deps:** update dependency linkedom to v0.18.2 ([d24818a](https://github.com/mx-space/core/commit/d24818a62c8c96c15181639be446011c7a9205d6))
+* **deps:** update dependency mongoose to v8.4.1 ([e37c986](https://github.com/mx-space/core/commit/e37c9869ee91ccecbee4b406bd837a8ec5ab5736))
+* **deps:** update dependency openai to v4.47.3 ([7996928](https://github.com/mx-space/core/commit/79969280277f91b493f86d6eab365b95bd1a987f))
+
+
+
+# [5.8.0](https://github.com/mx-space/core/compare/v5.7.12...v5.8.0) (2024-05-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @langchain/openai to v0.0.34 ([#1734](https://github.com/mx-space/core/issues/1734)) ([98ac7c0](https://github.com/mx-space/core/commit/98ac7c04130d15464dd394bb025db4e8430818be))
+* **deps:** update dependency isbot to v5.1.8 ([d83ad94](https://github.com/mx-space/core/commit/d83ad9473c3fabac3664c55ff14a8e3ce41af871))
+* **deps:** update dependency langchain to v0.2.2 ([f9e1f57](https://github.com/mx-space/core/commit/f9e1f57041ae0d06f73c574c99acc2d32c896f25))
+* **deps:** update dependency langchain to v0.2.3 ([a574cb0](https://github.com/mx-space/core/commit/a574cb00af73ae688bb261aeeb811e71f332bc49))
+* **deps:** update dependency mongoose-paginate-v2 to v1.8.2 ([e2f1e49](https://github.com/mx-space/core/commit/e2f1e4957f125c797591b18e29368f53210fdf93))
+* **deps:** update dependency openai to v4.47.2 ([b4f7857](https://github.com/mx-space/core/commit/b4f785722b74e7fff50e12b2f0190afc9f9d0022))
+* **deps:** update dependency ua-parser-js to v1.0.38 ([254ee4c](https://github.com/mx-space/core/commit/254ee4cb4791964ee4d3a65bb8f0ebc7fcbf48fb))
+
+
+
+## [5.7.12](https://github.com/mx-space/core/compare/v5.7.11...v5.7.12) (2024-05-28)
+
+
+### Bug Fixes
+
+* cache aggregate query with querykey ([32230bc](https://github.com/mx-space/core/commit/32230bc7da296ccf539c34e4a66d083ca2cf6a3b))
+* **deps:** update babel monorepo to v7.24.6 ([6881179](https://github.com/mx-space/core/commit/68811793186dc13e99229ae50dec3bb8576cc38f))
+* **deps:** update dependency @aws-sdk/client-s3 to v3.583.0 ([#1727](https://github.com/mx-space/core/issues/1727)) ([2874eca](https://github.com/mx-space/core/commit/2874eca3ef4091597fe1e5877c95a588ca4b17e5))
+
+
+
+## [5.7.11](https://github.com/mx-space/core/compare/v5.7.10...v5.7.11) (2024-05-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @aws-sdk/client-s3 to v3.582.0 ([#1723](https://github.com/mx-space/core/issues/1723)) ([2efcbe8](https://github.com/mx-space/core/commit/2efcbe85f0bac5ae61b8458cd8116dd983d3ac74))
+* **deps:** update dependency @clerk/clerk-sdk-node to v5.0.8 ([fc0d978](https://github.com/mx-space/core/commit/fc0d978e2dd76a53e0f4354937054de7495d9704))
+* **deps:** update dependency @clerk/clerk-sdk-node to v5.0.9 ([4cc19c2](https://github.com/mx-space/core/commit/4cc19c2f36b927161263f5888b3061b2f55b6ac2))
+* **deps:** update dependency cache-manager to v5.5.3 ([d1b0097](https://github.com/mx-space/core/commit/d1b00977d2ec1c3e6c9468bee09d50c34ba3a395))
+* **deps:** update dependency isbot to v5.1.7 ([b6efc7b](https://github.com/mx-space/core/commit/b6efc7ba26f48fd965afd16448eb1e3d6181c874))
+* get all link ([dbf7c24](https://github.com/mx-space/core/commit/dbf7c2460706919c9282a54744ec4d42bdb479e2))
+
+
+
+## [5.7.10](https://github.com/mx-space/core/compare/v5.7.9...v5.7.10) (2024-05-22)
+
+
+### Bug Fixes
+
+* asset push script ([f433ae7](https://github.com/mx-space/core/commit/f433ae7a455d517e7317e2545d51118198740ce3))
+* **deps:** update dependency axios-retry to v4.3.0 ([#1718](https://github.com/mx-space/core/issues/1718)) ([df4fc28](https://github.com/mx-space/core/commit/df4fc280a98e6b1cf64eaecdc7a5acf5d79fcd04))
+
+
+
+## [5.7.9](https://github.com/mx-space/core/compare/v5.7.8...v5.7.9) (2024-05-21)
+
+
+### Bug Fixes
+
+* comment model url setter ([16b919c](https://github.com/mx-space/core/commit/16b919cf900f708280e1fe9c806aa054d5a11268))
+
+
+
+## [5.7.8](https://github.com/mx-space/core/compare/v5.7.7...v5.7.8) (2024-05-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @typegoose/auto-increment to v4.4.0 ([#1714](https://github.com/mx-space/core/issues/1714)) ([a10dd5b](https://github.com/mx-space/core/commit/a10dd5b7e85f756b7691355f964ff709118831cf))
+* downgrade snakecase deps ([66a07e6](https://github.com/mx-space/core/commit/66a07e625210fdd30f6f217b9bb530861660454c))
+
+
+
+## [5.7.7](https://github.com/mx-space/core/compare/v5.7.6...v5.7.7) (2024-05-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @aws-sdk/client-s3 to v3.577.0 ([#1688](https://github.com/mx-space/core/issues/1688)) ([4d883ee](https://github.com/mx-space/core/commit/4d883ee3e439bdde131ebab09139046be8e4105e))
+* **deps:** update dependency commander to v12.1.0 ([#1713](https://github.com/mx-space/core/issues/1713)) ([3c30c1f](https://github.com/mx-space/core/commit/3c30c1f82be2f764c43f8257a0600b214026d22c))
+* **deps:** update dependency inquirer to v9.2.22 ([43e6331](https://github.com/mx-space/core/commit/43e6331d6eff538f641c2c4275290bf85f75aa27))
+* **deps:** update dependency linkedom to v0.18.0 ([#1696](https://github.com/mx-space/core/issues/1696)) ([1d4ced1](https://github.com/mx-space/core/commit/1d4ced10429d4c739fd84e2b7589dab1182dab91))
+* **deps:** update dependency mongoose to v8.4.0 ([#1709](https://github.com/mx-space/core/issues/1709)) ([abb912b](https://github.com/mx-space/core/commit/abb912b22ed8c42b4c26ae119236cfb86906e0fc))
+* throw error when delete file exception ([5da084d](https://github.com/mx-space/core/commit/5da084d6a0ead1ef4ecddf6a24c06cd10e923a07))
+
+
+
+## [5.7.6](https://github.com/mx-space/core/compare/v5.7.5...v5.7.6) (2024-05-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @clerk/clerk-sdk-node to v5.0.6 ([289e3cd](https://github.com/mx-space/core/commit/289e3cd673c973da018dfcba802d79f0810cb93d))
+* **deps:** update dependency @clerk/clerk-sdk-node to v5.0.7 ([06c0050](https://github.com/mx-space/core/commit/06c00502d3e4642daee86bdade84d007bd3fabd3))
+* **deps:** update dependency axios-retry to v4.2.0 ([#1705](https://github.com/mx-space/core/issues/1705)) ([9f20ba2](https://github.com/mx-space/core/commit/9f20ba2ff10629ee28a3c44726416b644da8473f))
+* **deps:** update dependency inquirer to v9.2.21 ([57ece57](https://github.com/mx-space/core/commit/57ece57c1395529792d76479f2a9148e8f4d1387))
+* **deps:** update dependency mongoose to v8.3.5 ([eea7608](https://github.com/mx-space/core/commit/eea7608102df46131a507de9409d3da1076cb489))
+* **deps:** update dependency mongoose-paginate-v2 to v1.8.1 ([#1708](https://github.com/mx-space/core/issues/1708)) ([0aef6e0](https://github.com/mx-space/core/commit/0aef6e025a886a1ab1cd8a9f84f35fcfee5a8191))
+* **deps:** update dependency openai to v4.47.1 ([#1676](https://github.com/mx-space/core/issues/1676)) ([8892442](https://github.com/mx-space/core/commit/88924422a85945c33a6b68f2af51b28cf5611e8a))
+
+
+
 ## [5.7.5](https://github.com/mx-space/core/compare/v5.7.4...v5.7.5) (2024-05-13)
 
 

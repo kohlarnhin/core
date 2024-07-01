@@ -6,6 +6,7 @@ import {
   verifyRegistrationResponse,
 } from '@simplewebauthn/server'
 import { ReturnModelType } from '@typegoose/typegoose'
+import { isoBase64URL, isoUint8Array } from '@simplewebauthn/server/helpers'
 
 import { RedisKeys } from '~/constants/cache.constant'
 import { CacheService } from '~/processors/redis/cache.service'
@@ -26,6 +27,11 @@ import type {
   VerifiedRegistrationResponse,
 } from '@simplewebauthn/server'
 
+// TODO Compatible with versions below node v20
+if (!globalThis.crypto) {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  globalThis.crypto = require('node:crypto').webcrypto
+}
 @Injectable()
 export class AuthnService {
   constructor(
@@ -71,12 +77,12 @@ export class AuthnService {
     const registrationOptions = await generateRegistrationOptions({
       rpName: 'MixSpace',
       rpID,
-      userID: userId,
+      userID: isoUint8Array.fromUTF8String(userId),
       userName: username,
 
       excludeCredentials: userAuthenticators.map((authenticator) => {
         return {
-          id: authenticator.credentialID,
+          id: isoBase64URL.fromBuffer(authenticator.credentialID),
           type: 'public-key',
           // Optional
           // transports: authenticator.transports,
@@ -156,7 +162,7 @@ export class AuthnService {
     } = registrationInfo
 
     const authenticator: Authenticator = {
-      credentialID,
+      credentialID: isoBase64URL.toBuffer(credentialID),
       credentialPublicKey,
       counter,
       credentialDeviceType,
@@ -183,7 +189,7 @@ export class AuthnService {
       rpID,
       // Require users to use a previously-registered authenticator
       allowCredentials: userAuthenticators.map((authenticator) => ({
-        id: authenticator.credentialID,
+        id: isoBase64URL.fromBuffer(authenticator.credentialID),
         type: 'public-key',
       })),
       userVerification: 'preferred',
@@ -226,7 +232,10 @@ export class AuthnService {
         expectedChallenge,
         expectedOrigin,
         expectedRPID,
-        authenticator,
+        authenticator: {
+          ...authenticator,
+          credentialID: isoBase64URL.fromBuffer(authenticator.credentialID),
+        },
 
         requireUserVerification: false,
       })
